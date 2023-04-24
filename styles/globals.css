@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sans {
+  font-family: var(--font-inter);
+}
+
+.duck {
+  animation: flicker2 3s infinite;
+}
+
+.flicker {
+  animation: flicker2 3s infinite;
+}
+
+.fast-flicker {
+  animation: flicker2 1s infinite;
+}
+
+.duck-yellow {
+  color: #fef3c7;
+  text-shadow: 0 0 0 transparent, 0 0 10px #eab308,
+    0 0 20px rgba(234, 178, 8, 0.5), 0 0 40px #eab308, 0 0 100px #eab308,
+    0 0 300px #eab308;
+}
+
+.intrepyd-green {
+  color: #d9ffef;
+  text-shadow: 0 0 0 transparent, 0 0 10px #00ff99,
+    0 0 20px rgba(0, 255, 153, 0.5), 0 0 40px #00ff99, 0 0 100px #00ff99;
+}
+
+.intrepyd-pink {
+  color: #ffdff1;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff008c,
+    0 0 20px rgba(255, 0, 140, 0.5), 0 0 40px #ff008c, 0 0 100px #ff008c,
+    0 0 200px #ff008c;
+}
+
+.intrepyd-blue {
+  color: #e1feff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #00f7ff,
+    0 0 20px rgba(0, 247, 255, 0.5), 0 0 40px #00f7ff, 0 0 100px #00f7ff;
+}
+
+.intrepyd-green-border {
+  border-color: #d9ffef;
+  box-shadow: 0 0 0 transparent, 0 0 10px rgba(0, 255, 153, 0.8),
+    0 0 20px rgba(0, 255, 153, 0.6), 0 0 40px rgba(0, 255, 153, 0.5), 0 0 100px rgba(0, 255, 153, 0.4);
+}
+
+.intrepyd-blue-border {
+  border-color: #e1feff;
+  box-shadow: 0 0 0 transparent, 0 0 10px rgba(0, 247, 255, 0.8),
+    0 0 20px rgba(0, 247, 255, 0.6), 0 0 40px rgba(0, 247, 255, 0.5), 0 0 100px rgba(0, 247, 255, 0.4);
+}
+
+@keyframes flicker1 {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    opacity: 0.8;
+  }
+
+  20%,
+  24%,
+  55% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes flicker2 {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}

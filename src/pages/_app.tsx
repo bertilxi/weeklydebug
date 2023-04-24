@@ -18,6 +18,11 @@ const inter = Inter({
   weight: ["400", "700"],
 })
 
+const title = "Weekly Debug"
+const url = "https://www.weeklydebug.com"
+const description =
+  "Bienvenidos a Weekly Debug, un podcast que pretende recoger las historias más interesantes del sector tecnólogico y presentarlas de manera comprensible para todos los amantes de la tecnología."
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -28,14 +33,25 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       }`}</style>
       <Head>
-        <title>Weekly Debug</title>
-        <meta
-          name="description"
-          content="Un podcast que pretende recoger las historias más interesantes del sector tecnólogico y presentarlas de manera comprensible para todos los amantes de la tecnología."
-        />
+        <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
+
+        <meta name="title" content={description} />
+        <meta name="description" content={description} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={description} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="/og.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={url} />
+        <meta property="twitter:title" content={description} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content="/og.png" />
       </Head>
       <ThemeProvider attribute="class" defaultTheme="dark">
         <Component {...pageProps} />

@@ -62,7 +62,7 @@ export default function IndexPage() {
             <Link
               href={link.link}
               key={link.link}
-              className="flex w-[130px] items-center p-2 text-left"
+              className="flex w-[150px] items-center p-2 text-left"
               rel="noreferrer noopener"
               target="_blank"
             >

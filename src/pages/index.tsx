@@ -52,7 +52,7 @@ export default function IndexPage() {
 
       <section className="sans container">
         <h1 className="mb-10 text-justify text-lg md:text-2xl">
-          Bienvenidos a Weekly debug, un podcast que pretende recoger las
+          Bienvenidos a Weekly Debug, un podcast que pretende recoger las
           historias más interesantes del sector tecnólogico y presentarlas de
           manera comprensible para todos los amantes de la tecnología.
         </h1>

@@ -8,6 +8,14 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   swcMinify: true,
+  async rewrites() {
+    return [
+      {
+        source: "/ingest/:path*",
+        destination: "https://app.posthog.com/:path*",
+      },
+    ]
+  },
 }
 
 export default nextConfig

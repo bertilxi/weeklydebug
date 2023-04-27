@@ -1,5 +1,6 @@
 import Link from "next/link"
 import {
+  AtSign,
   Instagram,
   Music2,
   Podcast,
@@ -46,11 +47,11 @@ const links = [
 export default function IndexPage() {
   return (
     <main>
-      <div className="">
+      <div>
         <Logo1 />
       </div>
 
-      <section className="sans container">
+      <section className="sans container md:mb-20">
         <h1 className="mb-10 text-justify text-lg md:text-2xl">
           Bienvenidos a Weekly Debug, un podcast que pretende recoger las
           historias más interesantes del sector tecnólogico y presentarlas de
@@ -71,6 +72,27 @@ export default function IndexPage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="sans container p-10">
+        <footer className="flex flex-1 justify-center text-xl md:text-2xl">
+          <div
+            className="flex cursor-pointer items-center hover:text-pink-500 hover:underline"
+            onClick={() =>
+              open(
+                Buffer.from(
+                  "bWFpbHRvOmNvbnRhY3RvQHdlZWtseWRlYnVnLmNvbQ==",
+                  "base64"
+                ).toString("utf8"),
+                "_blank"
+              )
+            }
+          >
+            contacto
+            <AtSign className="h-7 w-7 text-pink-500" />
+            weeklydebug.com
+          </div>
+        </footer>
       </section>
     </main>
   )

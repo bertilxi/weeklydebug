@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 import { useEffect } from "react"
 import type { AppProps } from "next/app"
-import { Pacifico as FontSans, Inter } from "next/font/google"
+import { Fira_Sans, Pacifico as FontSans } from "next/font/google"
 import Head from "next/head"
 import { useRouter } from "next/router"
 import { ThemeProvider } from "next-themes"
@@ -24,7 +24,7 @@ const fontSans = FontSans({
   weight: "400",
 })
 
-const inter = Inter({
+const inter = Fira_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
@@ -71,12 +71,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content="/og.png" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={url} />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content="/og.png" />
       </Head>
 
       <PostHogProvider client={posthog}>

@@ -5,7 +5,6 @@ import {
   Music2,
   Podcast,
   Twitch,
-  Twitter,
   Youtube,
 } from "lucide-react"
 
@@ -26,11 +25,6 @@ const links = [
     name: <span className="font-bold text-purple-300">Twitch</span>,
     link: "https://www.twitch.tv/weekly_debug",
     icon: <Twitch className="mr-2 h-8 w-8 text-purple-500" />,
-  },
-  {
-    name: <span className="font-bold text-cyan-300">Twitter</span>,
-    link: "https://twitter.com/WeeklyDebug",
-    icon: <Twitter className="mr-2 h-8 w-8 text-cyan-500" />,
   },
   {
     name: <span className="font-bold text-pink-300">Instagram</span>,

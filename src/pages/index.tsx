@@ -12,8 +12,8 @@ import { Logo1 } from "../components/wd"
 
 const links = [
   {
-    name: <span className="font-bold text-green-300">Podcast</span>,
-    link: "https://podcast.weeklydebug.com/",
+    name: <span className="font-bold text-green-300">Spotify</span>,
+    link: "https://open.spotify.com/show/5h8I9FCGZGs0mgXJIsswXj",
     icon: <Podcast className="mr-2 h-8 w-8 text-green-500" />,
   },
   {
